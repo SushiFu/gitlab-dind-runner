@@ -1,10 +1,7 @@
 runner-dind:
-    #restart:always
-    image: hub.036.fr/sushifu/gitlab-dind-runner:latest
+    restart: always
+    image: sushifu/gitlab-dind-runner:latest
     container_name: runner-dind
     privileged: true
     volumes:
     - ./config:/etc/gitlab-runner
-
-
-
